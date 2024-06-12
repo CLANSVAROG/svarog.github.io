@@ -1,0 +1,266 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #333;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px; /* Adjust the width as needed */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.about {
+    position: relative;
+    text-align: center;
+    padding: 200px 30px; /* Можливо зменшити верхній відступ */
+    background: url('img/foto.jpg') no-repeat center center/cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-text {
+    text-align: center; /* Вирівнюємо текст по центру */
+}
+
+.about-text h1, .about-text h2 {
+    margin: 0; /* Скидаємо відступи */
+}
+
+.about-text h1 {
+    margin-bottom: 20px; /* Встановлюємо відстань між заголовками */
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 20px; /* Додаємо відступ знизу, щоб забезпечити простір для карток */
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px; /* Додаємо відступ зверху для карток */
+}
+
+.card {
+    background-color: #444;
+    padding: 40px; /* Збільшуємо padding для карток */
+    border-radius: 10px;
+    width: 300px; /* Збільшуємо ширину карток */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center; /* Центруємо текст всередині карток */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card p, h3{
+    font-size: 20px;
+}
+
+.highlight {
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #444;
+    margin: 40px;
+    border-radius: 10px;
+}
+
+.highlight img {
+    width: 30%;
+    border-radius: 100px;
+    margin-right: 50px;
+}
+
+.highlight-text {
+    padding: 100px;
+    color: #fff;
+}
+
+.highlight-text h2 {
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.highlight-text p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.infoclan {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #222;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.infoclan h2 {
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+.infoclan p {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+
+.treb {
+    display: flex;
+    align-items: center;
+    padding: 40px 30px;
+    background-color: #444;
+    margin: 70px;
+    border-radius: 10px;
+    
+}
+
+.img-treb img {
+    width: 400px;
+    border-radius: 20px;
+    margin-right: 50px;
+}
+
+.treb-text {
+    padding: 100px;
+    color: #fff;
+}
+
+.treb-text h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.treb-text ul {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #444;
+    margin-top: 70px;
+    border-radius: 10px;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.services p {
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+.gallery img {
+    width: calc(33% - 10px);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #222;
+    padding: 50px 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+footer input, footer textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+footer button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+footer button:hover {
+    background-color: #e6b800;
+}
+
